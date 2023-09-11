@@ -44,7 +44,7 @@ end Quad_mux_1;
 
 architecture Behavioral of Quad_mux_1 is
 begin
-    process (g_i, sel_i) begin
+    process (g_i, sel_i, A_i, B_i) begin
         if (g_i = '0') then
             if (sel_i = '0') then
                 Y_o <= A_i;
